@@ -1,19 +1,19 @@
-# Versão do Ubuntu
-  dist: focal
+#Versão do Ubuntu
+dist: focal
 
 # Linguagem Utilizada para Desenvolver a Aplicação
-  language: python
+language: python
 
 # Versão que a aplicação suporta.
-  python:
+python:
    - "3.8"
 
 # Instalação de Módulos que são necessários para a Aplicação.
-  install:
+install:
   - pip install flask
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
-  script:
+script:
   - python -m unittest -v test
 
 # Definir o Deploy no Heroku
